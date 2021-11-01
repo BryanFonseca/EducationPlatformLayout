@@ -1,0 +1,131 @@
+/* Main containers */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to top, rgba(var(--light-blue-rgb), 0.7), rgba(var(--light-purple-rgb), 0.7));
+}
+
+.app-container{
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  height: 80vh;
+  width: 75vw;
+  border-radius: 0.3em;
+  background-color: white;
+/* If background color is set on body that would color out the whole viewport */
+/* That does not happen for background images tho */
+}
+
+.main-content{
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  grid-template-rows: auto 1fr;
+}
+
+
+/* Components */
+.header{
+  display: flex;
+  align-items: center;
+  grid-column: 1 / -1;
+}
+
+.header__right-flex{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header__user-picture{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-blue);
+  border-radius: 50%;
+  font-size: 0.9rem;
+  padding: 0.3em;
+  height: 2em;
+  width: 2em;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+
+.navbar{
+  height: 2em;
+  box-shadow: 0 0.05em var(--light-gray-text);
+}
+
+.navbar__items-container{
+  display: flex;
+  height: 100%;
+}
+
+.navbar__items-container > li + li{
+  margin-left: 2em;
+}
+
+.navbar__items-container li:hover{
+  box-shadow: 0 0.2em black;
+}
+
+.navbar__items-container li > a.is-active{
+  color: black;
+}
+
+.courses{
+
+}
+
+.course-item{
+  display: flex;
+  gap: 1em;
+}
+
+.course-item__picture{
+  flex-basis: 0;
+  flex-grow: 1;
+  background-image: linear-gradient(to top left, rgba(var(--light-purple-rgb), 0.8), rgba(var(--light-purple-rgb), 0.5));
+  border-radius: 0.1em;
+  box-shadow: 0.5em 0.5em var(--shadow-background);
+}
+
+.course-item__body{
+  flex-basis: 0;
+  flex-grow: 2;
+}
+
+.course-item__picture{
+
+}
+
+.course-item__body__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-item__body__bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-item__body__bottom .categories > li{
+  display: inline-block
+}
+
+.course-button{
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+  background-color: var(--dark-blue-text);
+  padding: 0.2em;
+}
+
+.course-rate-container{
+  display: flex;
+  align-items: center;
+}

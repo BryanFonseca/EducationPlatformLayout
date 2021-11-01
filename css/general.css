@@ -1,0 +1,44 @@
+:root{
+  --shadow-background: #edf0f7;
+  --dark-blue-text: #353333;
+  --light-gray-text: #aba8a9;
+  --light-blue: #b9c7de;
+  --light-blue-rgb: 185, 199, 222;
+  --light-purple: #b1b9e4;
+  --light-purple-rgb: 177, 185, 228;
+
+  font-size: 90%;
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a:link{
+  text-decoration: none;
+}
+a:visited{
+  color: var(--light-gray-text);
+}
+a:hover{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+}
+
+.padding-m{
+  padding: 1em;
+}
