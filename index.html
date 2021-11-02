@@ -11,10 +11,41 @@
   </head>
   <body>
     <div class="app-container">
-      <aside class="side-bar">
-
+      <aside class="side-bar padding-l">
+	<div class="side-bar__header">
+	  <ion-icon name="planet-outline"></ion-icon>
+	  <h1>
+	    Success
+	  </h1>
+	</div>
+	<ul class="side-bar__menu">
+	  <li class="side-bar__menu__item">
+	    <ion-icon name="clipboard-outline"></ion-icon>
+	    <span>Dashboard</span>
+	  </li>
+	  <li class="side-bar__menu__item is-active">
+	    <ion-icon name="albums-outline"></ion-icon>
+	    <span>Courses</span>
+	  </li>
+	  <li class="side-bar__menu__item">
+	    <ion-icon name="calendar-outline"></ion-icon>
+	    <span>Schedule</span>
+	  </li>
+	  <li class="side-bar__menu__item">
+	    <ion-icon name="mail-open-outline"></ion-icon>
+	    <span>Messages</span>
+	  </li>
+	  <li class="side-bar__menu__item">
+	    <ion-icon name="folder-open-outline"></ion-icon>
+	    <span>Resources</span>
+	  </li>
+	</ul>
+	<button class="side-bar__button">
+	  <ion-icon name="log-out-outline"></ion-icon>
+	  <span>Log out</span>
+	</button>
       </aside>
-      <main class="main-content">
+      <main class="main-content padding-l">
 	<header class="header">
 	  <span class="header__name">Courses</span>
 	  <div class="header__right-flex">
@@ -32,7 +63,7 @@
 	  <nav class="navbar">
 	    <ul class="navbar__items-container">
 	      <li><a href="#">Advertising</a></li>
-	      <li><a class="is-active" href="#">Design</a></li>
+	      <li class="is-active"><a href="#">Design</a></li>
 	      <li><a href="#">Marketing</a></li>
 	      <li><a href="#">Illustration</a></li>
 	      <li><a href="#">Brand</a></li>
@@ -40,30 +71,177 @@
 	  </nav>
 
 	  <article class="courses">
-	    <div class="course-item">
-	      <figure class="course-item__picture padding-m">
-		<ion-icon name="brush-outline"></ion-icon>
-		<p>Start:</p>
-		<p>15 November - 17 January</p>
-		<div class="course-price">$500</div>
-	      </figure>
-	      <div class="course-item__body padding-m">
-		<div class="course-item__body__header">
-		  <h3>First Course</h3>
-		  <div class="course-rate-container">
-		    <ion-icon name="star-outline"></ion-icon>
-		    <span>4.9</span>
+	    <div class="course-separator">
+	      <div class="course-item">
+		<figure class="course-item__picture padding-m">
+		  <ion-icon name="brush-outline"></ion-icon>
+		  <p>Start:</p>
+		  <p>15 November - 17 January</p>
+		  <div class="course-price">$500</div>
+		</figure>
+		<div class="course-item__body padding-m">
+		  <div class="course-item__body__header">
+		    <h3>First Course</h3>
+		    <div class="course-rate-container">
+		      <ion-icon name="star-outline"></ion-icon>
+		      <span>4.9</span>
+		    </div>
+		  </div>
+		  <p>Ipsum voluptatum veniam earum alias vrepudiandae ullam aut</p>
+		  <div class="course-item__body__bottom">
+		    <ul class="categories">
+		      <li>UX/UI</li>
+		      <li>Web Design</li>
+		    </ul>
+		    <button class="course-button">
+		      <ion-icon name="arrow-forward-outline"></ion-icon>
+		    </button>
 		  </div>
 		</div>
-		<p>Ipsum voluptatum veniam earum alias vrepudiandae ullam aut</p>
-		<div class="course-item__body__bottom">
-		  <ul class="categories">
-		    <li>UX/UI</li>
-		    <li>Web Design</li>
-		  </ul>
-		  <button class="course-button">
-		    <ion-icon name="arrow-forward-outline"></ion-icon>
-		  </button>
+	      </div>
+	    </div>
+	    <div class="course-separator">
+	      <div class="course-item">
+		<figure class="course-item__picture padding-m">
+		  <ion-icon name="brush-outline"></ion-icon>
+		  <p>Start:</p>
+		  <p>15 November - 17 January</p>
+		  <div class="course-price">$500</div>
+		</figure>
+		<div class="course-item__body padding-m">
+		  <div class="course-item__body__header">
+		    <h3>First Course</h3>
+		    <div class="course-rate-container">
+		      <ion-icon name="star-outline"></ion-icon>
+		      <span>4.9</span>
+		    </div>
+		  </div>
+		  <p>Ipsum voluptatum veniam earum alias vrepudiandae ullam aut</p>
+		  <div class="course-item__body__bottom">
+		    <ul class="categories">
+		      <li>UX/UI</li>
+		      <li>Web Design</li>
+		    </ul>
+		    <button class="course-button">
+		      <ion-icon name="arrow-forward-outline"></ion-icon>
+		    </button>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	    <div class="course-separator">
+	      <div class="course-item">
+		<figure class="course-item__picture padding-m">
+		  <ion-icon name="brush-outline"></ion-icon>
+		  <p>Start:</p>
+		  <p>15 November - 17 January</p>
+		  <div class="course-price">$500</div>
+		</figure>
+		<div class="course-item__body padding-m">
+		  <div class="course-item__body__header">
+		    <h3>First Course</h3>
+		    <div class="course-rate-container">
+		      <ion-icon name="star-outline"></ion-icon>
+		      <span>4.9</span>
+		    </div>
+		  </div>
+		  <p>Ipsum voluptatum veniam earum alias vrepudiandae ullam aut</p>
+		  <div class="course-item__body__bottom">
+		    <ul class="categories">
+		      <li>UX/UI</li>
+		      <li>Web Design</li>
+		    </ul>
+		    <button class="course-button">
+		      <ion-icon name="arrow-forward-outline"></ion-icon>
+		    </button>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	    <div class="course-separator">
+	      <div class="course-item">
+		<figure class="course-item__picture padding-m">
+		  <ion-icon name="brush-outline"></ion-icon>
+		  <p>Start:</p>
+		  <p>15 November - 17 January</p>
+		  <div class="course-price">$500</div>
+		</figure>
+		<div class="course-item__body padding-m">
+		  <div class="course-item__body__header">
+		    <h3>First Course</h3>
+		    <div class="course-rate-container">
+		      <ion-icon name="star-outline"></ion-icon>
+		      <span>4.9</span>
+		    </div>
+		  </div>
+		  <p>Ipsum voluptatum veniam earum alias vrepudiandae ullam aut</p>
+		  <div class="course-item__body__bottom">
+		    <ul class="categories">
+		      <li>UX/UI</li>
+		      <li>Web Design</li>
+		    </ul>
+		    <button class="course-button">
+		      <ion-icon name="arrow-forward-outline"></ion-icon>
+		    </button>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	    <div class="course-separator">
+	      <div class="course-item">
+		<figure class="course-item__picture padding-m">
+		  <ion-icon name="brush-outline"></ion-icon>
+		  <p>Start:</p>
+		  <p>15 November - 17 January</p>
+		  <div class="course-price">$500</div>
+		</figure>
+		<div class="course-item__body padding-m">
+		  <div class="course-item__body__header">
+		    <h3>First Course</h3>
+		    <div class="course-rate-container">
+		      <ion-icon name="star-outline"></ion-icon>
+		      <span>4.9</span>
+		    </div>
+		  </div>
+		  <p>Ipsum voluptatum veniam earum alias vrepudiandae ullam aut</p>
+		  <div class="course-item__body__bottom">
+		    <ul class="categories">
+		      <li>UX/UI</li>
+		      <li>Web Design</li>
+		    </ul>
+		    <button class="course-button">
+		      <ion-icon name="arrow-forward-outline"></ion-icon>
+		    </button>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	    <div class="course-separator">
+	      <div class="course-item">
+		<figure class="course-item__picture padding-m">
+		  <ion-icon name="brush-outline"></ion-icon>
+		  <p>Start:</p>
+		  <p>15 November - 17 January</p>
+		  <div class="course-price">$500</div>
+		</figure>
+		<div class="course-item__body padding-m">
+		  <div class="course-item__body__header">
+		    <h3>First Course</h3>
+		    <div class="course-rate-container">
+		      <ion-icon name="star-outline"></ion-icon>
+		      <span>4.9</span>
+		    </div>
+		  </div>
+		  <p>Ipsum voluptatum veniam earum alias vrepudiandae ullam aut</p>
+		  <div class="course-item__body__bottom">
+		    <ul class="categories">
+		      <li>UX/UI</li>
+		      <li>Web Design</li>
+		    </ul>
+		    <button class="course-button">
+		      <ion-icon name="arrow-forward-outline"></ion-icon>
+		    </button>
+		  </div>
 		</div>
 	      </div>
 	    </div>
@@ -71,12 +249,124 @@
 	</div>
 
 	<aside class="status-bar">
+	  <div class="calendar">
+	    <div class="calendar__header">
+	      <h3 class="calendar__header__date">
+		November 2021
+	      </h3>
+	      <div class="calendar__header__buttons">
+		<ion-icon name="chevron-back-outline"></ion-icon>
+		<ion-icon name="chevron-forward-outline"></ion-icon>
+	      </div>
+	    </div>
+	    <div class="calendar__days">
+	      <div class="calendar__day">
+		<span class="day">Sun</span>
+		<span class="day-number">2</span>
+	      </div>
+	      <div class="calendar__day is-current-day">
+		<span class="day">Mon</span>
+		<span class="day-number">3</span>
+	      </div>
+	      <div class="calendar__day">
+		<span class="day">Tue</span>
+		<span class="day-number">4</span>
+	      </div>
+	      <div class="calendar__day">
+		<span class="day">Wed</span>
+		<span class="day-number">5</span>
+	      </div>
+	      <div class="calendar__day">
+		<span class="day">Thu</span>
+		<span class="day-number">6</span>
+	      </div>
+	      <div class="calendar__day">
+		<span class="day">Fri</span>
+		<span class="day-number">7</span>
+	      </div>
+	      <div class="calendar__day">
+		<span class="day">Sat</span>
+		<span class="day-number">8</span>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="mentors">
+	    <h3>Mentors:</h3>
+	    <div class="mentors-list">
+	      <div class="mentors-list__item">
+		<img src="img/Miguel.jpg" alt="">
+		<div class="mentor-info">
+		  <p class="mentor-name">
+		  Miguel Diaz
+		  </p>
+		  <p class="mentor-role">
+		  UX / UI Designer
+		  </p>
+		</div>
+		<div class="mentor-exp">
+		  Exp. 6 years
+		</div>
+	      </div>
+	      <div class="mentors-list__item">
+		<img src="img/Richard.jpg" alt="">
+		<div class="mentor-info">
+		  <p class="mentor-name">
+		  Richard Ramirez
+		  </p>
+		  <p class="mentor-role">
+		  Graphic Designer
+		  </p>
+		</div>
+		<div class="mentor-exp">
+		  Exp. 4 years
+		</div>
+	      </div>
+	      <div class="mentors-list__item">
+		<img src="img/Tanisha.jpg" alt="">
+		<div class="mentor-info">
+		  <p class="mentor-name">
+		  Tanisha Thomas
+		  </p>
+		  <p class="mentor-role">
+		  Creative Director
+		  </p>
+		</div>
+		<div class="mentor-exp">
+		  Exp. 5 years
+		</div>
+	      </div>
+	    </div>
+	  </div>
 
+	  <div class="learning-progress padding-m">
+	    <h3>Learning Progress</h3>
+	    <div class="progress-container">
+	      <div class="progress-item">
+		<span class="progress__course">
+		  Digital Marketing - Unit 3
+		</span>
+		<span class="progress__percentage">80%</span>
+		<input type="range">
+	      </div>
+	      <div class="progress-item">
+		<span class="progress__course">
+		  Financial Analyst Course - Unit 1
+		</span>
+		<span class="progress__percentage">20%</span>
+		<input type="range">
+	      </div>
+	      <div class="progress-item">
+		<span class="progress__course">
+		  UX Course - Unit 2
+		</span>
+		<span class="progress__percentage">40%</span>
+		<input type="range">
+	      </div>
+	    </div>
+	  </div>
 	</aside>
-
       </main>
-    </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

@@ -18,6 +18,7 @@
 
 body{
   font-family: 'Ubuntu', sans-serif;
+  color: var(--dark-blue-text);
 }
 
 a:link{
@@ -41,4 +42,22 @@ button{
 
 .padding-m{
   padding: 1em;
+}
+
+.padding-l{
+  padding: 1.5em 1.5em;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--light-blue-rgb), 0.5);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
 }
