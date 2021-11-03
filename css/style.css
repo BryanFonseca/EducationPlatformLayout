@@ -12,19 +12,20 @@ body{
   grid-template-columns: 18fr minmax(0, 82fr);
   grid-template-rows: minmax(0, 1fr);
   min-height: 80vh;
-  min-width: 70vw;
+  /* aprox 1200 / 15.2 (because rem is redifined to 95% otherwise it'd be 16) */
+  max-width: 78.95rem;
   border-radius: 0.35em;
   background-color: white;
   overflow: hidden;
 
   box-shadow: 0 1em 2em rgba(0, 0, 0, 5%);
-/* If background color is set on body that would color out the whole viewport */
-/* That does not happen for background images tho */
+  /* If background color is set on body that would color out the whole viewport */
+  /* That does not happen for background images tho */
 }
 
 .main-content{
   display: grid;
-  grid-template-columns: minmax(0, 68fr) minmax(0, 32fr);
+  grid-template-columns: minmax(0, 67fr) minmax(0, 33fr);
   grid-template-rows: auto minmax(0, 9fr);
   column-gap: 1.5em;
 }
@@ -72,11 +73,11 @@ body{
   font-weight: 500;
   color: var(--light-gray-text);
   /* Solución temporal */
-/*   transform: translateY(-50%); */
+  /*   transform: translateY(-50%); */
 }
 
 .side-bar__menu > .side-bar__menu__item + .side-bar__menu__item{
-/*   margin-top: 1.4em; */
+  /*   margin-top: 1.4em; */
 }
 
 .side-bar__menu__item{
@@ -151,7 +152,7 @@ body{
 }
 
 .header__user-name{
-/*   font-weight: 700; */
+  /*   font-weight: 700; */
 }
 
 .header__user-picture{
@@ -222,7 +223,7 @@ body{
 
 .course-separator{
   padding: 1.2em 0;
-/*   margin-right: 0.5em; */
+  /*   margin-right: 0.5em; */
 }
 
 
@@ -449,7 +450,7 @@ body{
 
 .learning-progress{
   box-shadow: 0.5em 0.5em var(--shadow-background), -0.3em -0.3em 2em 0.1em var(--shadow-background);
-/*   width: 95%; */
+  /*   width: 95%; */
 }
 
 .learning-progress h3{
@@ -501,4 +502,86 @@ body{
 }
 .progress-item:nth-child(3) .progress__bar__inner{
   width: 40%;
+}
+
+/*********************************/
+/* MODAL */
+/*********************************/
+.invisible{
+  display: none;
+  opacity: 0%;
+}
+
+.modal a:link{
+  color: var(--dark-blue-text);
+}
+.modal a:visited{
+  color: var(--dark-blue-text);
+}
+.modal a:hover{
+  text-decoration: underline;
+}
+.modal a:active{
+
+}
+
+.modal{
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
+.modal-backdrop{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.modal-body{
+  position: fixed;
+  top: 50%;
+  right: 30%;
+  left: 30%;
+  padding: 2em 2.5em;
+  overflow: auto;
+  transform: translate(0, -50%);
+  border-radius: 0.9em;
+  background-color: white;
+  color: var(--light-gray);
+  z-index: 2;
+}
+
+.modal-body h2{
+  margin-bottom: 0.8em;
+}
+
+.modal-body p{
+  line-height: 1.5;
+}
+
+.modal-close{
+  cursor: pointer;
+  border: none;
+}
+
+.modal-close{
+  position: absolute;
+  right: 3.5%;
+  top: 8%;
+  height: 0.9em;
+  width: 0.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  /*   border-radius: 50%; */
+  color: var(--mid-gray);
+  background-color: transparent;
+}
+
+.modal-close:hover{
+  color: #bbb;
 }
