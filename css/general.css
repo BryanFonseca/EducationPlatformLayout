@@ -25,6 +25,7 @@ body{
 }
 
 a:link{
+  color: var(--light-gray-text);
   text-decoration: none;
 }
 a:visited{
@@ -63,4 +64,7 @@ button{
 ::-webkit-scrollbar-track {
   background: transparent;
   border-radius: 4px;
+}
+
+*{
 }
