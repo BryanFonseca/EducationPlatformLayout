@@ -9,19 +9,22 @@ body{
 
 .app-container{
   display: grid;
-  grid-template-columns: 18fr 82fr;
+  grid-template-columns: 18fr minmax(0, 82fr);
   grid-template-rows: minmax(0, 1fr);
   height: 80vh;
   width: 75vw;
-  border-radius: 0.3em;
+  border-radius: 0.35em;
   background-color: white;
+  overflow: hidden;
+
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 5%);
 /* If background color is set on body that would color out the whole viewport */
 /* That does not happen for background images tho */
 }
 
 .main-content{
   display: grid;
-  grid-template-columns: 65fr 35fr;
+  grid-template-columns: minmax(0, 65fr) minmax(0, 35fr);
   grid-template-rows: auto minmax(0, 9fr);
   column-gap: 1em;
 }
@@ -41,6 +44,8 @@ body{
   display: flex;
   align-items: center;
   color: black;
+  min-height: 0;
+  min-width: 0;
 }
 
 .side-bar__header ion-icon{
@@ -58,6 +63,11 @@ body{
 }
 
 .side-bar__menu{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  min-height: 0;
+  min-width: 0;
   font-size: 1.1rem;
   font-weight: 500;
   color: var(--light-gray-text);
@@ -66,7 +76,12 @@ body{
 }
 
 .side-bar__menu > .side-bar__menu__item + .side-bar__menu__item{
-  margin-top: 1.4em;
+/*   margin-top: 1.4em; */
+}
+
+.side-bar__menu__item{
+  min-height: 0;
+  min-width: 0;
 }
 
 .side-bar__menu__item span{
@@ -96,6 +111,8 @@ body{
   text-align: left;
   padding-top: 1.5em;
   border-top: 0.5px solid var(--light-gray-text);
+  min-height: 0;
+  min-width: 0;
 }
 
 .side-bar__button ion-icon{
@@ -208,6 +225,10 @@ body{
 /*   margin-right: 0.5em; */
 }
 
+.course-separator:nth-child(1){
+  margin-top: 1em;
+}
+
 .courses .course-separator + .course-separator{
   border-top: 0.5px solid var(--shadow-background);
 }
@@ -223,21 +244,54 @@ body{
 .course-item__body{
   flex-basis: 0;
   flex-grow: 2;
+  color: var(--light-gray-text);
+}
+
+.course-item__body p{
+  width: 70%;
+  margin-bottom: 1em;
+  line-height: 1.4;
 }
 
 .course-item__picture{
+  display: flex;
+  gap: 0.8em;
+  flex-direction: column;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
 
+.start-date{
+  font-size: 0.95em;
+}
+
+.course-price-container{
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5em;
+  border-top: 1px solid var(--light-gray-text);
+  color: var(--light-gray-text);
+}
+
+.price{
+  color: black;
 }
 
 .course-item__body__header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--dark-blue-text);
+  margin-bottom: 1em;
 }
 
 .course-item__body__bottom{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 1.7em;
 }
 
 .course-item__body__bottom .categories > li{
@@ -258,10 +312,19 @@ body{
   align-items: center;
 }
 
+.course-rate{
+  margin-left: 0.5em;
+}
+
 .status-bar{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.status-bar > *{
+  min-height: 0;
+  min-width: 0;
 }
 
 .calendar{
@@ -353,4 +416,54 @@ body{
 .learning-progress{
   box-shadow: 0.5em 0.5em var(--shadow-background), -0.3em -0.3em 2em 0.1em var(--shadow-background);
 /*   width: 95%; */
+}
+
+.learning-progress h3{
+  margin-bottom: 1.2em;
+}
+
+.progress-item{
+  margin-bottom: 1.1em;
+}
+
+.progress-item__flex{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4em;
+  color: var(--light-gray-text);
+}
+
+.progress__course{
+  font-size: 0.9rem;
+}
+
+.progress__percentage{
+  margin-left: auto;
+  color: black;
+  font-weight: 500;
+}
+
+.progress__bar{
+  position: relative;
+  min-height: 0.7em;
+  background-image: repeating-linear-gradient(-45deg, white, white 3px, var(--shadow-background) 3px, var(--shadow-background) 6px);
+}
+
+.progress__bar__inner{
+  position: absolute;
+  background-color: var(--dark-blue-text);
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* This percentages should be changed using JS */
+.progress-item:nth-child(1) .progress__bar__inner{
+  width: 80%;
+}
+.progress-item:nth-child(2) .progress__bar__inner{
+  width: 20%;
+}
+.progress-item:nth-child(3) .progress__bar__inner{
+  width: 40%;
 }
