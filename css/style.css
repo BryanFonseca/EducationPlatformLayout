@@ -239,7 +239,7 @@ body{
   background-position: top right;
   background-blend-mode: soft-light;
   border-radius: 0.1em;
-  box-shadow: 0.5em 0.5em var(--shadow-background);
+  box-shadow: 0.5em 0.5em var(--shadow);
 }
 
 .course-separator:nth-child(1) .course-item__picture{
@@ -250,11 +250,9 @@ body{
 }
 .course-separator:nth-child(2) .course-item__picture{
   background-image: url(../img/square-pattern-9.jpg), linear-gradient(to top left, rgba(var(--light-orange-rgb), 0.8), rgba(var(--light-orange-rgb), 0.5));
-  margin-top: 1em;
 }
 .course-separator:nth-child(3) .course-item__picture{
   background-image: url(../img/square-pattern-10.jpg), linear-gradient(to top left, rgba(var(--light-blue-rgb), 0.8), rgba(var(--light-blue-rgb), 0.5));
-  margin-top: 1em;
 }
 
 .course-item__picture ion-icon{
@@ -270,6 +268,8 @@ body{
   flex-basis: 0;
   flex-grow: 2;
   color: var(--light-gray-text);
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
 }
 
 .course-item__body p{
@@ -493,6 +493,7 @@ body{
 
 /* This percentages should be changed using JS */
 .progress-item:nth-child(1) .progress__bar__inner{
+  border-right: 0.8em solid var(--light-orange);
   width: 80%;
 }
 .progress-item:nth-child(2) .progress__bar__inner{
